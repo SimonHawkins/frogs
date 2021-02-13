@@ -13,8 +13,8 @@ html, body{
 }
 
 #camera--view, #camera--sensor, #camera--output{
-   /* transform: scaleX(-1);
-    filter: FlipH;*/
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 #camera--trigger{
