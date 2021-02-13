@@ -15,8 +15,8 @@ function cameraStart() {
         .then(function(stream) {
             track = stream.getTracks()[0];
             cameraView.srcObject = stream;
-          /*  cameraView.translate(w, 0);
-            cameraView.scale(-1, 1);*/
+            cameraView.translate(w, 0);
+            cameraView.scale(-1, 1);
         })
         .catch(function(error) {
             console.error("Oops. Something is broken.", error);
