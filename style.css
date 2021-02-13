@@ -14,6 +14,7 @@ html, body{
 
 #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
+    filter: FlipH;
 }
 
 #camera--trigger{
@@ -33,9 +34,9 @@ html, body{
 
 .taken{
     position:absolute;
-    height: 80%!important;
+    height: 90%!important;
     width: 90%!important;
-    top:5%;
+    top:10px;
     left:5%;
     margin:25% auto;
     transition: all 0.5s ease-in;
