@@ -38,7 +38,6 @@ html, body{
     width: 90%!important;
     top:10px;
     left:5%;
-    margin:25% auto;
     border: solid 3px yellow;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     z-index: 2;
