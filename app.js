@@ -17,9 +17,9 @@ function cameraStart() {
             track = stream.getTracks()[0];
             
             cameraView.srcObject = stream;
-            canvasContext = cameraView.getContext('2d');
+           /* canvasContext = cameraView.getContext('2d');
             canvasContext.translate(w, 0);
-            canvasContext.scale(-1, 1);
+            canvasContext.scale(-1, 1); */
             
         })
         .catch(function(error) {
