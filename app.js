@@ -6,7 +6,7 @@ var track = null;
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
-    cameraTrigger = document.querySelector("#camera--trigger");
+
     
 
 // Access the device camera and stream to cameraView
@@ -16,16 +16,14 @@ function cameraStart() {
         .then(function(stream) {
             track = stream.getTracks()[0];
             cameraView.srcObject = stream;
+            cameraOutput.classList.add("taken");
         })
         .catch(function(error) {
             console.error("Oops. Something is broken.", error);
         });
 }
 
-// Show the frog
-cameraTrigger.onclick = function() {
-    cameraOutput.classList.add("taken");
-};
+
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
