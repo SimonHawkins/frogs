@@ -16,7 +16,6 @@ function cameraStart() {
         .then(function(stream) {
             track = stream.getTracks()[0];
             cameraView.srcObject = stream;
-          
         })
         .catch(function(error) {
             console.error("Oops. Something is broken.", error);
