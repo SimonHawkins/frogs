@@ -1,1 +1,11 @@
-{}
+{
+  "custom-field": "Test goes here",
+  "custom-list": [
+    {
+      "custom-list-item": "Item one"
+    }
+  ],
+  "custom-object": {
+    "custom-text": "tes text goes here"
+  }
+}
